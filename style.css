@@ -1,0 +1,98 @@
+/* Base colors */
+:root {
+  --color-bg: #f7f6f3;
+  --color-surface: #fffdfa;
+  --color-card: #f3f1ed;
+  --color-border: #e5e3df;
+  --color-text: #3a3732;
+  --color-muted: #8c857a;
+  --color-primary: #e07a5f;   /* warm coral */
+  --color-primary-dark: #b85c3b;
+  --color-accent: #f2cc8f;    /* warm sand */
+  --color-accent2: #81b29a;   /* soft green */
+}
+
+/* Body and backgrounds */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.navbar-brand {
+  color: var(--color-primary) !important;
+}
+
+.nav-link {
+  color: var(--color-text) !important;
+  transition: color 0.2s;
+}
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-primary) !important;
+}
+
+/* Welcome card */
+.card.bg-light {
+  background: var(--color-card) !important;
+  border: none;
+}
+
+/* Rental cards */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(60, 50, 30, 0.04);
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(60, 50, 30, 0.10);
+}
+
+/* Card images */
+.card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover;
+  height: 180px;
+  background: var(--color-accent2);
+}
+
+/* Buttons */
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+.btn-primary:hover {
+  background: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: transparent;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary-dark);
+}
+
+/* Footer */
+footer {
+  background: var(--color-card) !important;
+  color: var(--color-muted) !important;
+  border-top: 1px solid var(--color-border) !important;
+}
+
+/* Miscellaneous */
+.lead {
+  color: var(--color-muted);
+}
